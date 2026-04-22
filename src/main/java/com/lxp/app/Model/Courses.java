@@ -1,4 +1,4 @@
-package com.lxp.app.domain;
+package com.lxp.app.Model;
 
 public class Courses {
     private Long coursesId;
