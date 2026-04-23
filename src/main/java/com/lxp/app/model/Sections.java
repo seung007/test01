@@ -1,17 +1,19 @@
 package com.lxp.app.model;
 
+import java.time.LocalDateTime;
+
 public class Sections {
     private Long sectionID;
     private final Long courseID;
     private String sectionTitle;
-    private String createdAt;
-    private String updateAt;
-    private String deletedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime updateAt;
+    private LocalDateTime deletedAt;
     private boolean isPublic;
     private boolean isDeleted;
 
-    public Sections(Long sectionID, Long courseID, String sectionTitle, String createdAt,
-            String updateAt, String deletedAt, boolean isPublic, boolean isDeleted) {
+    public Sections(Long sectionID, Long courseID, String sectionTitle, LocalDateTime createdAt,
+            LocalDateTime updateAt, LocalDateTime deletedAt, boolean isPublic, boolean isDeleted) {
         this.sectionID = sectionID;
         this.courseID = courseID;
         this.sectionTitle = sectionTitle;
@@ -38,27 +40,27 @@ public class Sections {
         this.sectionTitle = sectionTitle;
     }
 
-    public String getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(String createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 
-    public String getUpdateAt() {
+    public LocalDateTime getUpdateAt() {
         return updateAt;
     }
 
-    public void setUpdateAt(String updateAt) {
+    public void setUpdateAt(LocalDateTime updateAt) {
         this.updateAt = updateAt;
     }
 
-    public String getDeletedAt() {
+    public LocalDateTime getDeletedAt() {
         return deletedAt;
     }
 
-    public void setDeletedAt(String deletedAt) {
+    public void setDeletedAt(LocalDateTime deletedAt) {
         this.deletedAt = deletedAt;
     }
 

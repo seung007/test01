@@ -1,6 +1,8 @@
 package com.lxp.app.model;
 
 
+import java.time.LocalDateTime;
+
 public class Contents {
     private Long contentsId;
     private Long sectionId;
@@ -8,17 +10,17 @@ public class Contents {
     private String contentTitle;
     private String contentUrl;
     private Long time;
-    private String createdAt;
-    private String updatedAt;
-    private String deletedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+    private LocalDateTime deletedAt;
     private boolean isPublic;
     private boolean isDeleted;
     private boolean isFree;
 
 
     public Contents(Long contentsId, Long sectionId, Long courseId, String contentTitle,
-            String contentUrl, Long time, String createdAt, String updatedAt, String deletedAt,
-            boolean isPublic, boolean isDeleted, boolean isFree) {
+            String contentUrl, Long time, LocalDateTime createdAt, LocalDateTime updatedAt,
+            LocalDateTime deletedAt, boolean isPublic, boolean isDeleted, boolean isFree) {
         this.contentsId = contentsId;
         this.sectionId = sectionId;
         this.courseId = courseId;
@@ -81,27 +83,27 @@ public class Contents {
         this.time = time;
     }
 
-    public String getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(String createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 
-    public String getUpdatedAt() {
+    public LocalDateTime getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(String updatedAt) {
+    public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
 
-    public String getDeletedAt() {
+    public LocalDateTime getDeletedAt() {
         return deletedAt;
     }
 
-    public void setDeletedAt(String deletedAt) {
+    public void setDeletedAt(LocalDateTime deletedAt) {
         this.deletedAt = deletedAt;
     }
 
