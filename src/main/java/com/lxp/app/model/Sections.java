@@ -1,4 +1,4 @@
-package com.lxp.app.Model;
+package com.lxp.app.model;
 
 public class Sections {
     private Long sectionID;
