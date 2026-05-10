@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+  <persistence-unit name="chicken_diet_db">
+
+
+    <class>chap02.model.Meal</class>
+
+
+    <properties>
+<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/chicken_diet_db"/>
+      <property name="jakarta.persistence.jdbc.user" value="seung"/>
+      <property name="jakarta.persistence.jdbc.password" value="123456789@"/>
+
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.highlight" value="true"/>
+
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      
+    </properties>
+  </persistence-unit>
+</persistence>
